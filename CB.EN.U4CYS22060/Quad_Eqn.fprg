@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22060"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:06:32 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTExLTA0OzA5OjM3OjM5IEFNOzMzMzE="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTExLTA0OzExOjA2OjMyIEFNOzI7MzQyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="To get the roots for a given Quadratic Equation"/>
+            <comment text="Declaring the variable (Integer datatype)"/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <comment text="Declaring variable (Real datatype)"/>
+            <declare name="Root1, Root2" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the value for a:&quot;" newline="True"/>
+            <comment text="Co-efficient of X^2"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the value for b:&quot;" newline="True"/>
+            <comment text="Co-efficient of X&#13;&#10;"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter the value for c:&quot;" newline="True"/>
+            <comment text="Value for constant"/>
+            <input variable="c"/>
+            <output expression="&quot;The roots of the equation are:&quot;" newline="True"/>
+            <comment text="Expression for the Roots"/>
+            <assign variable="Root1" expression="(-b+(b^2 - 4*a*c)^0.5)/2*a"/>
+            <assign variable="Root2" expression="(-b-(b^2 - 4*a*c)^0.5)/2*a"/>
+            <output expression="Root1" newline="True"/>
+            <output expression="Root2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

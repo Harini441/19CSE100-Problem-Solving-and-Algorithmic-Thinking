@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22060"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:03:04 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTExLTA0OzA5OjA3OjM4IEFNOzMzMjc="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTExLTA0OzExOjAzOjA0IEFNOzI7MzQxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Celsius to Fahrenheit convertor"/>
+            <comment text="Declaring the variable"/>
+            <declare name="Celsius, Fahrenheit" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the value for Celsius:&quot;" newline="True"/>
+            <comment text="User-defined value is assigned"/>
+            <input variable="Celsius"/>
+            <comment text="Assigning the appropriate Expression"/>
+            <assign variable="Fahrenheit" expression="9/5 * Celsius +32"/>
+            <output expression="&quot;The value of the Fahrenheit:&quot;" newline="True"/>
+            <comment text="Output is stored in &quot;Fahrenheit&quot;"/>
+            <output expression="Fahrenheit" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

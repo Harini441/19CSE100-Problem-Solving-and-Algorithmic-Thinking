@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22060"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:50:50 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTExLTA0OzEwOjMwOjAwIEFNOzMzMDQ="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTExLTA0OzEwOjUwOjUwIEFNOzI7MzQyMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="To find the Modulas for given numbers"/>
+            <comment text="Declaring the Variable"/>
+            <declare name="No1, No2" type="Integer" array="False" size=""/>
+            <declare name="Quotient, Remainder" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value for No1:&quot;" newline="True"/>
+            <comment text="User-defind value for 1st Number"/>
+            <input variable="No1"/>
+            <output expression="&quot;Enter the value for No2:&quot;" newline="True"/>
+            <comment text="User-defind value for 2nd Number"/>
+            <input variable="No2"/>
+            <comment text="Dividing Dividend by Divisor"/>
+            <assign variable="Quotient" expression="No1/No2"/>
+            <comment text="Using Dividend= Divisor * Quotient+ Remainder"/>
+            <assign variable="Remainder" expression="No1-(No2*Quotient)"/>
+            <output expression="&quot;The Remainder of the expression is:&quot;" newline="True"/>
+            <comment text="Result of the Remainder"/>
+            <output expression="Remainder" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

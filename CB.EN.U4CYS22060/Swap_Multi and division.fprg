@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22060"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 11:07:44 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTExLTA0OzEwOjUyOjAwIEFNOzMzMDg="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTExLTA0OzExOjA3OjQ0IEFNOzI7MzQyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Swapping numbers using Multiplication and Division"/>
+            <comment text="Declare the varible"/>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value for a:&quot;" newline="True"/>
+            <comment text="User-defind input"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the value for b:&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="Expression for swapping using Multiplication and Division"/>
+            <assign variable="b" expression="a*b"/>
+            <assign variable="a" expression="b/a"/>
+            <assign variable="b" expression="b/a"/>
+            <output expression="&quot;The swapped number are:&quot;" newline="True"/>
+            <comment text="Result of Swapped numbers"/>
+            <output expression="a" newline="True"/>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
