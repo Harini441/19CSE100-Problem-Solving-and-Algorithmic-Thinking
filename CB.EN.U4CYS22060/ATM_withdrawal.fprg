@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22060"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 11:08:46 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTExLTA0OzEwOjMwOjAwIEFNOzMzMDQ="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTExLTE4OzExOjA4OjQ2IEFNOzM7MzQzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Welcome to ATM&quot;" newline="True"/>
+            <comment text="Declare the required variable"/>
+            <declare name="AccountNO, Pin, Amount, Balance, Currentamt" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter your Account No:&quot;" newline="True"/>
+            <comment text="Input Account Number"/>
+            <input variable="AccountNO"/>
+            <output expression="&quot;Enter your pin:&quot;" newline="True"/>
+            <comment text="Input Pin"/>
+            <input variable="Pin"/>
+            <comment text="Using IF statement, to check the required condition"/>
+            <if expression="Pin=1257">
+                <then>
+                    <output expression="&quot;Current Account Balance:600&quot;" newline="True"/>
+                    <output expression="&quot;Enter the amount to withdraw:&quot;" newline="True"/>
+                    <input variable="Amount"/>
+                </then>
+                <else>
+                    <output expression="&quot;Pin is incorrect&quot;" newline="True"/>
+                </else>
+            </if>
+            <comment text="Usinf IF statement to check the Minimum Balance"/>
+            <if expression="Amount&lt;=500">
+                <then>
+                    <output expression="&quot;Amount withdrawn is:&quot;&amp;Amount" newline="True"/>
+                    <comment text="Account Details are displayed"/>
+                    <output expression="&quot;ACCOUNT DETAILS:&quot;" newline="True"/>
+                    <output expression="&quot;Account No:&quot;&amp;AccountNO" newline="True"/>
+                    <output expression="&quot;Pin:12xx&quot;" newline="True"/>
+                    <assign variable="Currentamt" expression="600"/>
+                    <assign variable="Balance" expression="Currentamt-Amount"/>
+                    <output expression="&quot;Account Balance:&quot;&amp;Balance" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Your Bank Account doesn't have minimum balance. Please do deposit amount to withdraw&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
