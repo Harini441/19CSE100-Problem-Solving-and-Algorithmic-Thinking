@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22060"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:48:10 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzEwOjA3OjU0IEFNOzMzMTY="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzEwOjA5OjA4IEFNOzE7Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzA5OjMwOjI0IEFNOzY4MDE="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzEwOjQ4OjEwIEFNOzE7MzQyMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring the variable"/>
+            <declare name="a, b, c, n, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value for n:&quot;" newline="True"/>
+            <comment text="user-defined input"/>
+            <input variable="n"/>
+            <assign variable="a" expression="0"/>
+            <assign variable="b" expression="1"/>
+            <assign variable="x" expression="1"/>
+            <comment text="WHILE LOOP initialization"/>
+            <while expression="x&lt;=n">
+                <output expression="&quot;Fibnocci series&quot;" newline="True"/>
+                <comment text="FOR LOOP is used"/>
+                <for variable="x" start="1" end="n" direction="inc" step="1">
+                    <assign variable="c" expression="a+b"/>
+                    <output expression="a&amp;&quot;+&quot;&amp;b&amp;&quot;=&quot;&amp;c" newline="True"/>
+                    <comment text="Assigning a=b"/>
+                    <assign variable="a" expression="b"/>
+                    <comment text="Assigning b=c"/>
+                    <assign variable="b" expression="c"/>
+                </for>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
