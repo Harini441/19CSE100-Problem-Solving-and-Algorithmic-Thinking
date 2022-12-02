@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22060"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:21:56 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzA5OjAyOjExIEFNOzMzMTI="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzA5OjIxOjU2IEFNOzE7MzQzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring the variable"/>
+            <declare name="n, p, q" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the value for n:&quot;" newline="True"/>
+            <comment text="User-defined input"/>
+            <input variable="n"/>
+            <assign variable="q" expression="0"/>
+            <comment text="Using FOR LOOP"/>
+            <for variable="p" start="0" end="n" direction="inc" step="1">
+                <assign variable="q" expression="q+p"/>
+            </for>
+            <comment text="Output the result"/>
+            <output expression="q" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

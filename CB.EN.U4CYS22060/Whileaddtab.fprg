@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22060"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:01:09 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzA5OjMwOjI0IEFNOzMzMTc="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzEwOjAxOjA5IEFNOzE7MzQxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring variable"/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <comment text="Assingning value for &quot;b&quot;"/>
+            <assign variable="b" expression="1"/>
+            <comment text="WHILE LOOP is initiated"/>
+            <while expression="b&lt;=10">
+                <output expression="&quot;Addition of &quot;&amp;b" newline="True"/>
+                <comment text="FOR LOOP is used in-built"/>
+                <for variable="a" start="1" end="10" direction="inc" step="1">
+                    <assign variable="c" expression="a+b"/>
+                    <comment text="Output of the computation"/>
+                    <output expression="a&amp;&quot;+&quot;&amp;b&amp;&quot;=&quot;&amp;c" newline="True"/>
+                </for>
+                <comment text="To perform the iteration"/>
+                <assign variable="b" expression="b+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

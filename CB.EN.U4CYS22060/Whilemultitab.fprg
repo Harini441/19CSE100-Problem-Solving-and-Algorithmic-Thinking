@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22060"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:04:04 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzEwOjAxOjE0IEFNOzMzMDY="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzEwOjAxOjIwIEFNOzE7Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzA5OjMwOjI0IEFNOzY3ODc="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIyLTEyLTAyOzEwOjA0OjA0IEFNOzE7MzQxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Table for MULTIPLICATION"/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <comment text="Assingning value for &quot;b&quot;"/>
+            <assign variable="b" expression="1"/>
+            <comment text="WHILE LOOP is initiated"/>
+            <while expression="b&lt;=10">
+                <output expression="&quot;Multiplication table of &quot;&amp;b" newline="True"/>
+                <comment text="FOR LOOP is used in-built"/>
+                <for variable="a" start="1" end="10" direction="inc" step="1">
+                    <assign variable="c" expression="a*b"/>
+                    <comment text="Output of the computation"/>
+                    <output expression="a&amp;&quot;*&quot;&amp;b&amp;&quot;=&quot;&amp;c" newline="True"/>
+                </for>
+                <comment text="To perform the iteration"/>
+                <assign variable="b" expression="b+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
