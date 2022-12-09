@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:26:51 AM"/>
+        <attribute name="created" value="SGFyaW5pO0JVQ0VQSEFMVVM7MjAyMi0xMi0wOTsxMToxODowMSBBTTsyNjEw"/>
+        <attribute name="edited" value="SGFyaW5pO0JVQ0VQSEFMVVM7MjAyMi0xMi0wOTsxMToxODo1OSBBTTsxO0hhcmluaTtCVUNFUEhBTFVTOzIwMjItMTItMDY7MDI6MzQ6NTQgUE07QVJSQVkuZnByZzs2MzM3"/>
+        <attribute name="edited" value="SGFyaW5pO0JVQ0VQSEFMVVM7MjAyMi0xMi0wOTsxMToyNjo1MSBBTTsyOzI3MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring the required variables"/>
+            <declare name="index, n" type="Integer" array="False" size=""/>
+            <declare name="number" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the number elements to be entered:&quot;" newline="True"/>
+            <comment text="User-defined no.of elements"/>
+            <input variable="n"/>
+            <comment text="Assigning the size of array as 'n'"/>
+            <declare name="numbers" type="Integer" array="True" size="n"/>
+            <comment text="Initialization of FOR LOOP"/>
+            <for variable="index" start="0" end="n-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number for index=[&quot;&amp;index&amp;&quot;]&quot;" newline="True"/>
+                <input variable="number"/>
+                <assign variable="numbers[index]" expression="number"/>
+            </for>
+            <comment text="Displaying the frequency of elements"/>
+            <output expression="&quot;Total no.of elements in an array is:&quot;&amp;n" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

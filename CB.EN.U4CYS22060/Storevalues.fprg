@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 09:32:15 AM"/>
+        <attribute name="created" value="SGFyaW5pO0JVQ0VQSEFMVVM7MjAyMi0xMi0wOTswOTowNTo0NyBBTTsyNjIz"/>
+        <attribute name="edited" value="SGFyaW5pO0JVQ0VQSEFMVVM7MjAyMi0xMi0wOTswOTozMjoxNSBBTTsyOzI3Mjc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Declaring variable"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <comment text="Creating array in the size of 10"/>
+            <declare name="arrays" type="Integer" array="True" size="10"/>
+            <comment text="User-defined values"/>
+            <declare name="Array" type="Integer" array="False" size=""/>
+            <comment text="Initialization of FOR LOOP"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter the value:&quot;" newline="True"/>
+                <input variable="Array"/>
+                <comment text="List operation"/>
+                <assign variable="arrays[index]" expression="Array"/>
+            </for>
+            <output expression="&quot;Value of 10 numbers&quot;" newline="True"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <comment text="To print the output with respective to the index"/>
+                <output expression="&quot;Array content numbers [&quot;&amp;index&amp;&quot;]=&quot;&amp;arrays[index]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
