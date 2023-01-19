@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Harini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-19 07:29:00 PM"/>
+        <attribute name="created" value="SGFyaW5pO0JVQ0VQSEFMVVM7MjAyMy0wMS0xOTswNzoxNzoyOSBQTTsyNjM5"/>
+        <attribute name="edited" value="SGFyaW5pO0JVQ0VQSEFMVVM7MjAyMy0wMS0xOTswNzoyOTowMCBQTTsxOzI3Mzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arraysize" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the array size:&quot;" newline="True"/>
+            <input variable="arraysize"/>
+            <declare name="bubblearray" type="Integer" array="True" size="arraysize"/>
+            <declare name="counter, incounter, placeholder, userin" type="Integer" array="False" size=""/>
+            <assign variable="counter" expression="0"/>
+            <assign variable="incounter" expression="0"/>
+            <for variable="counter" start="0" end="arraysize-1" direction="inc" step="1">
+                <output expression="&quot;Enter the number:&quot;" newline="True"/>
+                <input variable="userin"/>
+                <assign variable="bubblearray[counter]" expression="userin"/>
+            </for>
+            <assign variable="counter" expression="0"/>
+            <for variable="counter" start="0" end="arraysize-1" direction="inc" step="1">
+                <for variable="incounter" start="0" end="arraysize-1-counter-1" direction="inc" step="1">
+                    <if expression="bubblearray[incounter]&gt;bubblearray[incounter+1]">
+                        <then>
+                            <assign variable="placeholder" expression="bubblearray[incounter]"/>
+                            <assign variable="bubblearray[incounter]" expression="bubblearray[incounter+1]"/>
+                            <assign variable="bubblearray[incounter+1]" expression="placeholder"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <assign variable="counter" expression="0"/>
+            <for variable="counter" start="0" end="arraysize-1" direction="inc" step="1">
+                <output expression="bubblearray[counter]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
