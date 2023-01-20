@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22060"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:54:44 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIzLTAxLTIwOzA5OjQzOjA5IEFNOzMzMjM="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIzLTAxLTIwOzEwOjU0OjQ0IEFNOzY7MzQyOQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring the variables"/>
+            <declare name="size, min" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the size of the array:&quot;" newline="True"/>
+            <comment text="user-defined input"/>
+            <input variable="size"/>
+            <declare name="selarray" type="Real" array="True" size="size"/>
+            <declare name="counter, innercounter" type="Integer" array="False" size=""/>
+            <declare name="holder, input" type="Real" array="False" size=""/>
+            <assign variable="counter" expression="0"/>
+            <comment text="Initialization of FOR LOOP"/>
+            <for variable="counter" start="0" end="size-1" direction="inc" step="1">
+                <comment text="Getting the values of &#13;&#10;elements from the user"/>
+                <output expression="&quot;Enter the element:&quot;" newline="True"/>
+                <input variable="input"/>
+                <assign variable="selarray[counter]" expression="input"/>
+            </for>
+            <for variable="counter" start="0" end="size-1" direction="inc" step="1">
+                <comment text="Creating a new varible to store the min value and using it further for swapping"/>
+                <assign variable="min" expression="counter"/>
+                <for variable="innercounter" start="counter+1" end="size-1" direction="inc" step="1">
+                    <comment text="To check whether the given element in min or not"/>
+                    <if expression="selarray[innercounter]&lt;selarray[min]">
+                        <then>
+                            <assign variable="min" expression="innercounter"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <comment text="Below process undergoes swapping progress"/>
+                <assign variable="holder" expression="selarray[counter]"/>
+                <assign variable="selarray[counter]" expression="selarray[min]"/>
+                <assign variable="selarray[min]" expression="holder"/>
+            </for>
+            <comment text="To print the sorted array"/>
+            <for variable="counter" start="0" end="size-1" direction="inc" step="1">
+                <output expression="selarray[counter]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

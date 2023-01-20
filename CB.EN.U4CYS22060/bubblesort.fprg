@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22060"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:59:11 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIzLTAxLTIwOzA5OjA1OjI1IEFNOzMzMTk="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIzLTAxLTIwOzEwOjU5OjAxIEFNOzE7Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIzLTAxLTIwOzA5OjQzOjA5IEFNO3NlbGVjdGlvbnNvcnQuZnByZzs4NzYy"/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA2MDsyMDIyMjNNQVlDMDA5NzsyMDIzLTAxLTIwOzEwOjU5OjExIEFNOzQ7MzQyNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declaring the variable size"/>
+            <declare name="arraysize" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter the size of the array:&quot;" newline="True"/>
+            <comment text="user-defined input"/>
+            <input variable="arraysize"/>
+            <comment text="creating an array "/>
+            <declare name="bubarray" type="Real" array="True" size="arraysize"/>
+            <declare name="counter, incounter" type="Integer" array="False" size=""/>
+            <declare name="placeholder, input" type="Real" array="False" size=""/>
+            <comment text="Assigning values to the given variable"/>
+            <assign variable="counter" expression="0"/>
+            <assign variable="incounter" expression="0"/>
+            <comment text="Initialization of FOR LOOP"/>
+            <for variable="counter" start="0" end="arraysize-1" direction="inc" step="1">
+                <output expression="&quot;Enter the element:&quot;" newline="True"/>
+                <comment text="User-defined input for array elements"/>
+                <input variable="input"/>
+                <assign variable="bubarray[counter]" expression="input"/>
+            </for>
+            <assign variable="counter" expression="0"/>
+            <for variable="counter" start="0" end="arraysize-1" direction="inc" step="1">
+                <comment text="Nested FOR LOOP- to run the program 'n' no. if times"/>
+                <for variable="incounter" start="0" end="arraysize-1-counter-1" direction="inc" step="1">
+                    <comment text="To check whether the element in the index of innercount is greater than the next element "/>
+                    <if expression="bubarray[incounter]&gt;bubarray[incounter+1]">
+                        <then>
+                            <comment text="Case for swapping"/>
+                            <assign variable="placeholder" expression="bubarray[incounter]"/>
+                            <assign variable="bubarray[incounter]" expression="bubarray[incounter+1]"/>
+                            <assign variable="bubarray[incounter+1]" expression="placeholder"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <comment text="Printing the sorted array"/>
+            <output expression="&quot;The sorted array is:&quot;" newline="True"/>
+            <assign variable="counter" expression="0"/>
+            <for variable="counter" start="0" end="arraysize-1" direction="inc" step="1">
+                <output expression="bubarray[counter]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
